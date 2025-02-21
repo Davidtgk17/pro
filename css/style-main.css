@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+/* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+
+
+
+
+body {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: black;
+}
+
+.header__nav {
+    
+    display: none;
+    position: absolute;
+    top: 35%;
+    left: 27%;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.header__active {
+    background-color: #111849;
+    min-height: 117vh;
+    display: flex;
+    align-items: start;
+    transition: all 0.5s ease;
+}
+
+.header__active a {
+    color: white;
+}
+.header__active i {
+    color: white;
+}
+
+
+.nav__ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;    
+}
+
+.nav__active {
+    display: block;
+}
+
+i {
+    font-size: 40px;
+}
+
+
+ul > li a {
+    color: white;
+}
+a {
+    color: black;
+    font-size: 30px;
+}
+/* Шапка */
+
+.header {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+}
+
+.header__wrapper {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.header__desc {
+    font-weight: 700;
+    font-size: 25px;
+    animation-delay: 2s;
+
+}
+
+
+/* Основа */
+
+.main-history {
+    width: 320px;
+    margin: 0 auto;
+}
+
+.main__title {
+    font-weight: 700;
+    font-size: 22px;
+    color: #3029D9;
+
+}
+
+.main__src {
+
+}
+
+.main__desc {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1;
+    width: 270px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    width: 320px;
+    margin-top: -360px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* Новости */
+
+.main-history--h2 {
+    font-weight: 700;
+    font-size: 22px;
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 30px;
+    border: 3px black solid;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+
+.news {
+
+    padding: 30px 0;
+}
+
+.news__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.news__card {
+    width: 328px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 5px 18px 38px -4px rgba(0,0,0,0.66);
+    margin: 0 auto;
+}
+
+.head img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card__h5 {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.body {
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    font-size: 15px;
+}
