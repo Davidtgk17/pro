@@ -95,15 +95,12 @@ legend {
 	display: block;
 }
 
-
-
-
-
 body {
     font-family: "Poppins", serif;
     font-weight: 500;
     font-size: 12px;
-    color: black;
+    color: white;
+    background-color: #3029D9
 }
 
 .header__nav {
@@ -151,16 +148,22 @@ ul > li a {
     color: white;
 }
 a {
-    color: black;
+    color: white;
     font-size: 30px;
 }
+
+
+.no-scroll {
+    overflow: hidden;
+}
+
 /* Шапка */
 
 .header {
     padding: 15px;
     display: flex;
     justify-content: space-between;
-    color: black;
+    color: white;
 }
 
 .header__wrapper {
@@ -176,92 +179,122 @@ a {
 
 }
 
-
-/* Основа */
-
-.main-history {
-    width: 320px;
+/* Welcome */
+.welcome__wrapper {
+    padding-top: 125px; 
+    width: 339px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    
 }
-
-.main__title {
+.welcome__title {
     font-weight: 700;
-    font-size: 22px;
-    color: #3029D9;
-
+    font-size: 35px;
+    line-height: 1.125;
+    color: #FFFFFF;
+    width: 300px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
-.main__src {
-
+.opisanie__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 300px;
+    border-radius: 10px;
+    margin: 0 auto;
+    
 }
 
-.main__desc {
+.welcome__wrapper--opisanie {
+    background-color: #111849;
+    width: 320px;
+    border-radius: 10px;
+}
+
+.opisanie__write {
+    color: white;
+    font-size: 35px;
     font-weight: 600;
-    font-size: 20px;
+}
+
+.fa-plus {
+    color: white;
+}
+
+.welcome__active.welcome__desc {
+    display: block;
+}
+
+.welcome__desc {
+    display: none;
+    margin-top: 12px;
+    font-weight: 500;
+    font-size: 25px;
     line-height: 1;
-    width: 270px;
-    margin: 0 auto;
-}
-
-.wrapper {
-    width: 320px;
-    margin-top: -360px;
-    margin-left: auto;
-    margin-right: auto;
+    color: #FFFFFF;
+    width: 309px;
     text-align: center;
+    text-align: left;
+    padding: 10px 10px;
+    word-break: break-all;
+    transition: all 0.5s ease;
+    line-height: 1;
 }
-
-/* Новости */
-
-.main-history--h2 {
-    font-weight: 700;
-    font-size: 22px;
-    margin-top: 100px;
-    text-align: center;
-    margin-bottom: 30px;
-    border: 3px black solid;
-    width: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 5px;
-    padding: 2px;
-}
-
-
-.news {
-
-    padding: 30px 0;
-}
-
-.news__wrapper {
+/* Список */
+.spisok__statia {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
 }
 
-.news__card {
-    width: 328px;
-    border-radius: 8px;
-    background: white;
-    box-shadow: 5px 18px 38px -4px rgba(0,0,0,0.66);
-    margin: 0 auto;
-}
-
-.head img{
-    width: 100%;
-    border-radius: 8px;
-}
-
-.card__h5 {
+.spisok__wrapper {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: black;
+    text-align: center;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 40px;
+    text-decoration: underline;
 }
 
-.body {
+.card {
+    background-color: white ;
+    width: 300px;
     text-align: center;
+    margin: 10px auto;
+    border-radius: 7px;
+    color: black;
+    padding: 7px 7px;
 }
 
-.footer {
-    text-align: center;
-    font-size: 15px;
+.card__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 25px;
 }
+
+.card__body {
+    display: none;
+    padding: 4px 6px;
+    font-style: italic;
+    text-align: left;
+    font-size: 20px;
+}
+
+.card__title {
+    margin-left: 20px;
+}
+
+.fa-plus-minus {
+    margin-right: 20px;
+}
+
+.card__body.active {
+    display: block;
+}
+
