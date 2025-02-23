@@ -170,7 +170,7 @@ a {
 }
 .welcome__wrapper {
     padding-top: 215px; 
-    width: 339px;
+    width: 300px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -183,7 +183,7 @@ a {
     line-height: 1.125;
     color: #FFFFFF;
     width: 300px;
-    margin-bottom: 20px;
+    margin: 20 auto;
     text-align: center;
     animation-iteration-count: infinite;
     animation-delay: 0.7s;
@@ -238,4 +238,38 @@ a {
 
 .no-scroll {
     overflow: hidden;
+}
+
+@media (max-width: 360px) {
+    .welcome__title {
+        font-size: 25px;
+        width: 250px;
+        word-wrap: break-word;
+        margin: 0 auto;
+    }
+    .opisanie__write {
+        font-size: 20px;
+    }
+    .opisanie__write i {
+        font-size: 20px;
+    }
+    .welcome__wrapper--opisanie {
+        width: 200px;
+        margin: 0 auto;
+    }
+    .opisanie__wrapper {
+        width: 200px;
+    }
+    .welcome__wrapper {
+        margin: 0;
+        width: 250px;
+        margin: 0 auto;
+    }
+    .welcome__desc {
+        font-size: 14px;
+        width: 200px;
+    }
+    .fa-plus {
+        font-size: 25px;
+    }
 }
