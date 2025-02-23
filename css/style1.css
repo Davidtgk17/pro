@@ -256,6 +256,7 @@ a {
     }
     .opisanie__write i {
         font-size: 25px;
+        padding: 5px;
     }
     .welcome__wrapper--opisanie {
         width: 250px;
