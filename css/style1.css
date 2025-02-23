@@ -179,7 +179,7 @@ a {
 }
 .welcome__title {
     font-weight: 700;
-    font-size: 35px;
+    font-size: 30px;
     line-height: 1.125;
     color: #FFFFFF;
     width: 300px;
@@ -207,12 +207,13 @@ a {
 
 .opisanie__write {
     color: white;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 600;
 }
 
 .fa-plus {
     color: white;
+    font-size: 30px;
 }
 
 .welcome__active.welcome__desc {
@@ -241,6 +242,9 @@ a {
 }
 
 @media (max-width: 360px) {
+    .welcome__opisanie {
+        padding: 5px;
+    }
     .welcome__title {
         font-size: 25px;
         width: 250px;
@@ -248,13 +252,13 @@ a {
         margin: 0 auto;
     }
     .opisanie__write {
-        font-size: 20px;
+        font-size: 25px;
     }
     .opisanie__write i {
-        font-size: 20px;
+        font-size: 25px;
     }
     .welcome__wrapper--opisanie {
-        width: 200px;
+        width: 250px;
         margin: 0 auto;
     }
     .opisanie__wrapper {
@@ -266,8 +270,8 @@ a {
         margin: 0 auto;
     }
     .welcome__desc {
-        font-size: 14px;
-        width: 200px;
+        font-size: 20px;
+        width: 245px;
     }
     .fa-plus {
         font-size: 25px;
