@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style4.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <header class="header ">
+            <a href="index.html"><div class="header__wrapper">
+                <i class="fa-solid fa-gavel"></i>
+                <p class="header__desc">Законы</p>
+            </div></a>
+            <div class="header__icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <nav class="header__nav ">
+                <ul class="nav__ul">
+                    <li class="nav__li"><a href="index2.html">Новости</a></li>
+                    <li class="nav__li"><a href="index3.html">Статьи</a></li>
+                    <li class="nav__li"><a href="index4.html">Тест</a></li>
+                    <li class="nav__li"><a href="">Реабилитация</a></li>
+                </ul>
+            </nav> 
+        </header>
+<h1>Тест про наркотики</h1>
+    <div id="quiz">
+        <div class="question" data-answer="2">
+            <p>1. Какой орган страдает больше всего от употребления наркотиков?</p>
+            <button onclick="checkAnswer(this, 1)">Сердце</button>
+            <button onclick="checkAnswer(this, 2)">Головной мозг</button>
+            <button onclick="checkAnswer(this, 3)">Печень</button>
+        </div>
+        <div class="question hidden" data-answer="1">
+            <p>2. Какой из этих наркотиков является легальным в некоторых странах?</p>
+            <button onclick="checkAnswer(this, 1)">Каннабис</button>
+            <button onclick="checkAnswer(this, 2)">Героин</button>
+            <button onclick="checkAnswer(this, 3)">Кокаин</button>
+        </div>
+        <div class="question hidden" data-answer="3">
+            <p>3. Какой из этих факторов может способствовать наркозависимости?</p>
+            <button onclick="checkAnswer(this, 1)">Здоровый образ жизни</button>
+            <button onclick="checkAnswer(this, 2)">Физические упражнения</button>
+            <button onclick="checkAnswer(this, 3)">Стресс и депрессия</button>
+        </div>
+        <div class="question hidden" data-answer="1">
+            <p>4. Какой вид зависимости вызывает наркотики?</p>
+            <button onclick="checkAnswer(this, 1)">Физическую и психологическую</button>
+            <button onclick="checkAnswer(this, 2)">Только физическую</button>
+            <button onclick="checkAnswer(this, 3)">Только психологическую</button>
+        </div>
+        <div class="question hidden" data-answer="2">
+            <p>5. Как можно предотвратить наркотическую зависимость?</p>
+            <button onclick="checkAnswer(this, 1)">Игнорировать проблему</button>
+            <button onclick="checkAnswer(this, 2)">Получать образование и поддержку</button>
+            <button onclick="checkAnswer(this, 3)">Попробовать, но контролировать</button>
+        </div>
+    </div>
+    <h2 id="result" class="hidden"></h2>
+    <script src="js/index4.js"></script>
+</body>
+</html>
