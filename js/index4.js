@@ -14,22 +14,3 @@ menu.addEventListener('click', function() {
 
 
 
-let score = 0;
-let currentQuestion = 0;
-const questions = document.querySelectorAll(".question");
-const result = document.getElementById("result");
-
-function checkAnswer(button, answer) {
-    const question = questions[currentQuestion];
-    if (parseInt(question.getAttribute("data-answer")) === answer) {
-        score++;
-    }
-    question.classList.add("hidden");
-    currentQuestion++;
-    if (currentQuestion < questions.length) {
-        questions[currentQuestion].classList.remove("hidden");
-    } else {
-        result.textContent = `Вы набрали ${score} из ${questions.length} баллов!`;
-        result.classList.remove("hidden");
-    }
-}
