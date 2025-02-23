@@ -196,7 +196,7 @@ a {
     width: 300px;
     border-radius: 10px;
     margin: 0 auto;
-    
+    padding: 4px;
 }
 
 .welcome__wrapper--opisanie {
