@@ -185,7 +185,7 @@ a {
 .answer h1 {
     margin-top: 70px;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 28px;
     text-align: center;
     color: #3029D9;
     margin-bottom: 20px;
@@ -223,4 +223,5 @@ button {
     text-align: center;
     font-size: 25px;
     font-weight: 700;
+    animation-duration: 1s;
 }
