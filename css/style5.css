@@ -232,3 +232,9 @@ h1 {
 .podderzka2 {
     animation-delay: 1s;
 }
+
+.podderzka2 a, .podderzka a {
+    font-size: 20px;
+    color: black;
+    display: block;
+}
