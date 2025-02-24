@@ -89,16 +89,14 @@ label {
 legend {
 	display: block;
 }
-
-
-
-
+    
 body {
     font-family: "Poppins", serif;
     font-weight: 500;
     font-size: 12px;
     color: black;
     height: 2%;
+    background-color: #111849;
 }
 
 .header__nav {
@@ -158,4 +156,79 @@ a {
     font-size: 25px;
     animation-delay: 2s;
 
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.card p {
+    color: #5975FF;
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+}
+
+.card {
+    width: 270px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    margin: 30px auto;
+}
+
+.card img {
+    border-radius: 8px;
+}
+
+.podderzka__title {
+    transform: rotate(-22deg);
+
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.podderzka__img {
+    transform: rotate(-20deg);
+
+    position: absolute;
+    top: -5px;
+    left: 20px;
+    width: 150px;
+}
+
+.podderzka img {
+    width: 100%;
+}
+
+.podderzka__title2 {
+    transform: rotate(-25deg);
+
+    position: absolute;
+    top: 15px;
+    right: 70px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.podderzka__img2 {
+    transform: rotate(-20deg);  
+    position: absolute;
+    top: -5px;
+    right: 50px;
+    width: 150px;
+}
+
+.podderzka2 img {
+    width: 100%;
+}
+
+.podderzka2 {
+    animation-delay: 1s;
 }
