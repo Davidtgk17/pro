@@ -17,6 +17,7 @@ let point = 0
 let step = 0
 let answer__question = document.querySelectorAll('.answer__question')
 let result = document.querySelector('.result')
+let img = document.querySelector('.img__result')
 
 function checkanswer(answer) {
     let question = answer__question[step]
@@ -31,5 +32,7 @@ function checkanswer(answer) {
         question.classList.add('hidden')
         result.classList.remove('hidden')
         result.textContent = 'Вы набрали '+ point + ' из ' +step 
+        img.classList.remove('hidden')
     } 
 }
+
