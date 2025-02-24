@@ -212,7 +212,7 @@ h1 {
 
     position: absolute;
     top: 15px;
-    right: 70px;
+    right: 90px;
     font-weight: 600;
     font-size: 20px;
 }
@@ -221,7 +221,7 @@ h1 {
     transform: rotate(-20deg);  
     position: absolute;
     top: -5px;
-    right: 50px;
+    right: 73px;
     width: 150px;
 }
 
@@ -235,6 +235,6 @@ h1 {
 
 .podderzka2 a, .podderzka a {
     font-size: 20px;
-    color: black;
+    color: #FFD700;
     display: block;
 }
