@@ -13,3 +13,23 @@ menu.addEventListener('click', function() {
 })
 
 
+let point = 0
+let step = 0
+let answer__question = document.querySelectorAll('.answer__question')
+let result = document.querySelector('.result')
+
+function checkanswer(answer) {
+    let question = answer__question[step]
+    if(question.getAttribute('data-answer') == answer) {
+        point++
+    }
+    question.classList.add('hidden')
+    step++
+    if(step < answer__question.length) {
+        answer__question[step].classList.remove('hidden')
+    } else {
+        question.classList.add('hidden')
+        result.classList.remove('hidden')
+        result.textContent = 'Вы набрали '+ point + ' из ' +step 
+    } 
+}

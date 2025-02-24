@@ -217,3 +217,9 @@ button {
     line-height: 1;
     font-size: 15px;
 }
+
+.result {
+    margin: 30px;
+    font-size: 25px;
+    font-weight: 700;
+}
